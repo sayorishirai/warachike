@@ -1,0 +1,45 @@
+<%= render 'admin/header' %>
+<%= render 'admin/sidemenu' %>
+
+	<div class="admin-contain">
+		<div class="admin-menu-title">営業依頼一覧</div>
+		<div class="admin-wrap">
+			<div class="form-group">
+				<input type="text" class="form-control">
+			</div>
+			<div class="admin-japanese-sort">
+				<div class="admin-japanese-sort-1">50音順</div>
+				<div class="admin-japanese-sort-kana">あ</div>
+				<div class="admin-japanese-sort-kana">か</div>
+				<div class="admin-japanese-sort-kana">さ</div>
+				<div class="admin-japanese-sort-kana">た</div>
+				<div class="admin-japanese-sort-kana">な</div>
+				<div class="admin-japanese-sort-kana">は</div>
+				<div class="admin-japanese-sort-kana">ま</div>
+				<div class="admin-japanese-sort-kana">や</div>
+				<div class="admin-japanese-sort-kana">ら</div>
+				<div class="admin-japanese-sort-kana">わ</div>
+			</div>
+			<table class="admin-reserve-table">
+				<tr>
+					<th>名前</th>
+					<th>受付日時</th>
+					<th>電話番号</th>
+					<th>メールアドレス</th>
+					<th>依頼内容詳細</th>
+					<th>返信</th>
+				</tr>
+				<tr>
+					<td>(フリガナ)<br>お名前</td>
+					<td>6/10 18:00</td>
+					<td>000-0000-0000</td>
+					<td>aaaaa@aaa</td>
+					<td>○○にしてください。</td>
+					<td>済 6/10</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+<%= render 'admin/footer' %>
+

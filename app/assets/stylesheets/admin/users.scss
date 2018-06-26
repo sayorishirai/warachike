@@ -1,0 +1,126 @@
+// Place all the styles related to the admin/users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------------------------------------------------------------------
+	ユーザー登録一覧
+-----------------------------------------------------------------------*/
+.form-group input{
+	width: 400px;
+	height: 40px;
+}
+/*-- 50音順 --*/
+.admin-japanese-sort{
+	background-color: #fff100;
+	font-size: 18px;
+	margin: 20px 0 20px 0;
+}
+.admin-japanese-sort-1{
+	display: inline-block;
+	color: #1a428d;
+	padding: 5px 126px;
+}
+.admin-japanese-sort-kana{
+	display: inline-block;
+	border-left:1px solid  #1a428d;
+	color: #1a428d;
+	padding: 5px 25px;
+}
+
+/*-- ユーザー情報テーブル --*/
+.admin-user-table{
+	width: 950px;
+}
+.admin-user-table th{
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #ea71a7;
+	padding: 5px 10px;
+	width: 200px;
+	text-align: left;
+}
+.admin-user-table td{
+	width: 200px;
+	padding: 5px 10px;
+	color: #1a428d;
+	background-color: #fff;
+	font-size: 16px;
+}
+
+/*---------------------------------------------------------------------
+	ユーザー登録詳細
+-----------------------------------------------------------------------*/
+.admin-user-edit-btn{
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 20px;
+	background-color: #ea71a7;
+	margin: 20px 0;
+	text-align: center;
+	width: 150px;
+}
+.admin-user-submit-btn{
+	margin: 20px 0;
+}
+/*---------------------------------------------------------------------
+	ユーザー詳細
+-----------------------------------------------------------------------*/
+/*-- ユーザー詳細フォーム --*/
+.admin-user-form-box{
+	border:1px solid #ea71a7;
+	background-color: #fff;
+	width: 800px;
+	padding: 20px 25px;
+}
+.admin-user-form-line{
+	border-bottom:1px solid #ea71a7;
+	padding: 10px 0;
+}
+.admin-user-form-txt{
+	display: inline-block;
+	font-size: 16px;
+}
+.admin-user-form-txt2{
+	display: inline-block;
+	font-size: 16px;
+}
+/*-- ユーザーお気に入り芸人一覧 --*/
+.admin-user-favotite{
+	float: left;
+	margin: 0 0 0 30px;
+	width: 400px;
+}
+.admin-user-favotite-line{
+	border-bottom:1px solid #ea71a7;
+}
+.admin-user-favotite-name{
+	font-size: 16px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

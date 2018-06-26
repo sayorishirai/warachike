@@ -1,0 +1,24 @@
+// Place all the styles related to the admin/reserves controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------------------------------------------------------------------
+	予約一覧
+-----------------------------------------------------------------------*/
+/*-- 予約一覧テーブル --*/
+.admin-reserve-table th{
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #ea71a7;
+	padding: 5px 10px;
+	width: 200px;
+	text-align: left;
+}
+.admin-reserve-table td{
+	width: 200px;
+	padding: 5px 10px;
+	color: #1a428d;
+	background-color: #fff;
+	word-break: break-all;	/* 文字を改行させる */
+}

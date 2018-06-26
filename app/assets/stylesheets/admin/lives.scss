@@ -1,0 +1,35 @@
+// Place all the styles related to the admin/lives controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------------------------------------------------------------------
+	公演登録画面
+-----------------------------------------------------------------------*/
+/*-- 公演登録フォーム --*/
+.admin-live-form-box{
+	border:1px solid #ea71a7;
+	padding: 20px;
+	width: 800px;
+	margin: 50px 0 0 0;
+}
+.admin-live-form-txt{
+	display: inline-block;
+	font-size: 16px;
+	width: 140px;
+}
+.form-group2{
+	display: inline-block;
+}
+.form-group2 input{
+	width: 600px;
+}
+/*-- 登録ボタン --*/
+.admin-s-btn{
+	background-color: #ea71a7;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	width: 150px;
+	margin:50px 0 0 300px;
+	padding: 10px 0;
+}

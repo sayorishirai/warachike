@@ -1,0 +1,78 @@
+<%= render 'user/header' %>
+
+<div class="container">
+  <h2>会員登録編集</h2>
+  <div class="col-md-8 col-md-offset-2">
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="devise-box">
+
+        <div class="red-underline2">
+          <div class="field">
+            <div class="device-txt"><%= f.label :お名前： %></div>
+            <%= f.text_field :name, class: "field-box", autofocus: true, autocomplete: "name" %>
+          </div>
+        </div><!-- .red-underline2 -->
+
+        <div class="red-underline2">
+          <div class="field">
+            <div class="device-txt"><%= f.label :フリガナ： %></div>
+            <%= f.text_field :name_phonetic, class: "field-box", autofocus: true, autocomplete: "name_phonetic" %>
+          </div>
+        </div><!-- .red-underline2 -->
+
+        <div class="red-underline2">
+          <div class="field">
+            <div class="device-txt"><%= f.label :電話番号： %></div>
+            <%= f.text_field :phone_number, class: "field-box", autofocus: true, autocomplete: "phone_number" %>
+          </div>
+        </div><!-- .red-underline2 -->
+
+        <div class="red-underline2">
+          <div class="field">
+            <div class="device-txt"><%= f.label :email %></div>
+            <%= f.text_field :email, class: "field-box", autofocus: true, autocomplete: "email" %>
+          </div>
+        </div><!-- .red-underline2 -->
+
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
+
+        <div class="red-underline2">
+          <div class="field">
+            <div class="device-txt"><%= f.label :パスワード %></div>
+            <div class="device-txt"><%= f.password_field :password, autocomplete: "off" %></div>
+            <% if @minimum_password_length %>
+              <em>パスワードは<%= @minimum_password_length %>文字以上</em>
+            <% end %>
+          </div>
+        </div><!-- .red-underline2 -->
+
+        <div class="red-underline2">
+          <div class="field">
+            <div class="device-txt2"><%= f.label :もう一度パスワードを入力してください %></div>
+            <%= f.password_field :password_confirmation, autocomplete: "off" %>
+          </div>
+        </div><!-- .red-underline2 -->
+
+        <div class="red-underline2">
+          <div class="field">
+            <div class="device-txt2"><%= f.label :現在のパスワードを入力してください %></div>
+            <%= f.password_field :current_password, autocomplete: "off" %>
+          </div>
+        </div><!-- .red-underline2 -->
+
+      </div>
+
+      <div class="actions">
+        <%= f.submit "編集する" %>
+      </div>
+    <% end %>
+
+  </div><!-- /col-md-8 col-md-offset-2 -->
+</div><!-- /container -->
+
+<%= render 'user/footer' %>

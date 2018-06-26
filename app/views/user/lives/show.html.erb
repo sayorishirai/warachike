@@ -1,0 +1,22 @@
+<%= render 'user/header' %>
+
+<div class="container mt30">
+	<h3>チケット詳細</h3>
+	<div class="col-md-10 col-md-offset-1">
+			<h6><span>■ </span><%= @live.name %></h6>
+			<p class="ticket-title">【出演】</p>
+			<p class="ticket-txt"><%= @live.performer %></p>
+			<p class="ticket-title">【日時】</p>
+			<p class="ticket-txt"><%= @live.date %></p>
+			<p class="ticket-price">【料金】 <span><%= @live.price %>円</span></p>
+			<%= form_for(@reserve) do |f| %>
+				<%= f.hidden_field :name,value: @live.name %>
+				<%= f.hidden_field :user_id,value: current_user.id %>
+				<%= f.hidden_field :live_id,value:@live.id %>
+			<%= f.submit("予約する", class:"ticket-r-btn center-block") %>
+		<% end %>
+	</div><!-- /col-md-10 col-md-offset-1 -->
+</div><!-- /container -->
+
+
+<%= render 'user/footer' %>

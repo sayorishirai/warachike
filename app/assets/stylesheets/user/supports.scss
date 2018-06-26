@@ -1,0 +1,118 @@
+// Place all the styles related to the user/supports controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------------------------------------------------------------------
+	応援ページ
+-----------------------------------------------------------------------*/
+.cheer-txt{
+	font-size: 16px;
+}
+/* 応援画像 */
+.s-img{
+	width: 250px;
+	height: 250px;
+	border:1px solid #ccc;
+	margin-bottom: 30px;
+}
+/* 支援内容 */
+.support-intro{
+	color: #1a428d;
+	font-size: 18px;
+	font-weight: normal !important;
+	border-top:3px solid #ea71a7;
+	border-bottom: 2px dashed #ea71a7;
+	padding: 0 0 0 30px;
+}
+.s-price-txt{
+	margin: 0px;
+	font-weight: bold;
+	font-size: 30px;
+	display: inline-block;
+	padding-right: 20px;
+
+}
+.s-price-txt span{
+	font-size: 12px;
+	color: #1a428d;
+	text-align: center;
+}
+.s-price-txt2{
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 0;
+}
+.s-price-txt2 span{
+	font-size: 20px;
+	font-weight: bold;
+	color: #E0001A;
+
+}
+.s-click-txt{
+	font-size: 12px;
+	color: #1a428d;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 18px;
+	padding-right: 30px;
+}
+.s-click-txt span{
+	font-size: 20px;
+	font-weight: bold;
+	color: #E0001A;
+}
+/* 支援内容詳細 */
+.support-list{
+	border-bottom: 2px dashed #ea71a7;
+	padding: 0 0 0 30px;
+}
+.support-list p{
+	font-size: 16px;
+	word-break: break-all;	/* 文字を改行させる */
+	padding-right: 30px;
+}
+.support-list p span{
+	color: #E0001A;
+}
+/* 動画リンクボタン */
+.support-btn{
+	width: 250px;
+	background-color:#fff100;
+	color: #1a428d;
+	font-size: 18px;
+	border: none;
+	padding: 12px 0;
+	margin: 50px 0 10px 0;
+	text-align:center;
+}
+
+/*---------------------------------------------------------------------
+	広告ページ
+-----------------------------------------------------------------------*/
+/* 広告動画BOX */
+.advertisement-video{
+	width: 900px;
+	height: 500px;
+	border:2px solid #E0001A;
+	padding:10px;
+	margin: 30px 0 0 20px;
+}
+.advertisement-video-box{
+	width: 875px;
+	height: 475px;
+	border:1px solid #ccc;
+}
+/* 応援ボタン */
+.advertisement-btn{
+	width: 250px;
+	background-color:#fff100;
+	color: #1a428d;
+	font-size: 18px;
+	border: none;
+	padding: 12px 0;
+	margin: 50px 0 10px 0;
+	text-align:center;
+}
+
+

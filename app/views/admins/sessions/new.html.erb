@@ -1,0 +1,28 @@
+<header id="admin-login-header">
+</header><!-- /header -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="admin-login-title">ログイン</div>
+
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.label :メールアドレス %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :パスワード %><br />
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+
+        <div id="admin-actions">
+          <%= f.submit "ログイン" %>
+        </div>
+      <% end %>
+    </div><!-- /col-md-4 col-md-offset-4 -->
+  </div><!-- /row -->
+</div><!-- /container -->
+
+<%= render 'admin/footer' %>

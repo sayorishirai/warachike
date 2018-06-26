@@ -1,0 +1,29 @@
+<%= render 'admin/header' %>
+<%= render 'admin/sidemenu' %>
+
+	<div class="admin-contain">
+		<div class="admin-menu-title">ユーザー詳細</div>
+		<div class="admin-wrap">
+			<div class="admin-user-form-box">
+				<div class="admin-user-form-line">
+					<div class="admin-user-form-txt">お名前 :　</div>
+					<div class="admin-user-form-txt2"><%= @user.name %></div>
+				</div>
+				<div class="admin-user-form-line">
+					<div class="admin-user-form-txt">フリガナ :　</div>
+					<div class="admin-user-form-txt2"><%= @user.name_phonetic %></div>
+				</div>
+				<div class="admin-user-form-line">
+					<div class="admin-user-form-txt">電話番号 :　</div>
+					<div class="admin-user-form-txt2"><%= @user.phone_number %></div>
+				</div>
+				<div class="admin-user-form-line">
+					<div class="admin-user-form-txt">メールアドレス :　</div>
+					<div class="admin-user-form-txt2"><%= @user.email %></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<%= render 'admin/footer' %>
+

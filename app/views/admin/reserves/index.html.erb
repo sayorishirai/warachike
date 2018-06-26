@@ -1,0 +1,31 @@
+<%= render 'admin/header' %>
+<%= render 'admin/sidemenu' %>
+
+	<div class="admin-contain">
+		<div class="admin-menu-title">予約一覧</div>
+		<div class="admin-wrap">
+			<table class="admin-reserve-table">
+				<tr>
+					<th>公演名</th>
+					<th>料金</th>
+					<th>ユーザ名</th>
+				</tr>
+				<% @reserve.each do |reserve| %>
+					<tr>
+						<td>
+							<%= reserve.live.name %>
+						</td>
+						<td>
+							<%= reserve.live.price %>円
+						</td>
+						<td>
+							<%= reserve.user.name %>
+						</td>
+					</tr>
+				<% end %>
+			</table>
+		</div>
+	</div>
+
+<%= render 'admin/footer' %>
+

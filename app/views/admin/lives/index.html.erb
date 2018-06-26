@@ -1,0 +1,40 @@
+<%= render 'admin/header' %>
+<%= render 'admin/sidemenu' %>
+
+	<div class="admin-contain">
+		<div class="admin-menu-title">公演登録画面</div>
+		<div class="admin-wrap">
+			<div class="admin-live-form-box">
+				<%= form_for(@live, url: admin_lives_path) do |f| %>
+				<div class="admin-user-form-line">
+					<div class="admin-live-form-txt">公演名 :</div>
+					<div class="form-group2">
+						<%= f.text_field :name , class:"form-control" %>
+					</div>
+				</div>
+				<div class="admin-user-form-line">
+					<div class="admin-live-form-txt">公演日程:</div>
+					<div class="form-group2">
+						<%= f.text_field :date , class:"form-control" %>
+					</div>
+				</div>
+				<div class="admin-user-form-line">
+					<div class="admin-live-form-txt">出演者 :</div>
+					<div class="form-group2">
+						<%= f.text_field :performer , class:"form-control" %>
+					</div>
+				</div>
+				<div class="admin-user-form-line">
+					<div class="admin-live-form-txt">料金 :</div>
+					<div class="form-group2">
+						<%= f.text_field :price , class:"form-control" %>
+					</div>
+				</div>
+			</div>
+			<%= f.submit("登録", class:"admin-s-btn") %>
+			<% end %>
+		</div>
+	</div>
+
+<%= render 'admin/footer' %>
+

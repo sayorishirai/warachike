@@ -1,0 +1,101 @@
+// Place all the styles related to the user/theaters controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------------------------------------------------------------------
+	劇場詳細ページ
+-----------------------------------------------------------------------*/
+/* 地域メニュー */
+.place-header-menu{
+	background-color: #ea71a7;
+}
+.place-header-menu li{
+	color: #fff;
+	display: inline-block;
+	padding: 8px 40px 8px 40px;
+	font-size: 16px;
+}
+.place-header-menu li i{
+	font-size: 14px;
+	color: #fff;
+}
+/* 劇場メニュー */
+.place-menu{
+	margin: 0 0 30px 0;
+
+}
+.place-menu li{
+	color: #1a428d;
+	font-size: 16px;
+	display: inline-block;
+	padding: 8px 40px 8px 40px;
+	margin: 5px 0 20px 0;
+}
+/* 劇場画像 */
+.t-img{
+	width: 250px;
+	height: 250px;
+	border:1px solid #ccc;
+	margin-bottom: 30px;
+}
+/* アクセスボタン */
+.t-access-btn{
+	width: 250px;
+	background-color:#fff100;
+	color: #1a428d;
+	font-size: 18px;
+	border: none;
+	padding: 12px 0;
+	margin-bottom: 10px;
+	text-align:center;
+}
+.t-access-btn i{
+	color: #1a428d;
+	font-size: 18px;
+}
+.t-txt{
+	font-size: 16px;
+	word-break: break-all;	/* 文字を改行させる */
+	border-bottom: 2px dashed #ea71a7;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+}
+/* 公演スケジュール */
+.t-schedule-table{
+	border-top: 3px solid #ea71a7;
+	border-bottom: 2px dashed #ea71a7;
+}
+.live-schedule-title{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px 130px 20px 0;
+}
+.live-schedule-time{
+	font-weight: normal;
+	padding: 0 130px 0 0;
+}
+.live-schedule-performer{
+	padding: 0 180px 0 0;
+	font-weight: normal;
+
+}
+.live-schedule-price{
+	padding: 20px 20px 20px 0;
+	color: #E0001A;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

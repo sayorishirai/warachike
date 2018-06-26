@@ -1,0 +1,54 @@
+// Place all the styles related to the user/lives controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------------------------------------------------------------------
+	チケット詳細ページ
+-----------------------------------------------------------------------*/
+/* 詳細文 */
+.ticket-title{
+	font-size: 16px;
+	margin: 0;
+}
+.ticket-txt{
+	font-size: 16px;
+	margin: 0;
+	padding: 0 0 20px 15px;
+}
+.ticket-price{
+	font-size: 16px;
+	border-bottom: 2px dashed #ea71a7;
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+.ticket-price span{
+	color: #E0001A;
+	font-size: 30px;
+}
+/* 合計金額 */
+.ticket-total{
+	border-bottom: 2px solid #E0001A;
+}
+.ticket-total-txt{
+	display:inline-block;
+	font-size: 16px;
+}
+.ticket-total-txt2{
+	display: inline-block;
+	font-size: 16px;
+	padding-left: 80px;
+}
+.ticket-total-txt2 span{
+	color: #E0001A;
+	font-size: 30px;
+}
+/* チケット予約ボタン */
+.ticket-r-btn{
+	width: 150px;
+	margin:40px auto;
+	background-color: #ea71a7;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 0;
+}

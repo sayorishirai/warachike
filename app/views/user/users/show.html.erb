@@ -1,0 +1,30 @@
+<%= render 'user/header' %>
+
+<div class="container">
+	<h2>マイページ</h2>
+	<div class="col-md-3 col-sm-2">
+		<ul class="mypage-sidemenu">
+			<li class="mypage-sidemenu-list"><%= @user.name %>様</li>
+			<%= link_to(edit_user_registration_path) do %>
+				<li>プロフィール情報編集</li>
+			<% end %>
+			<%= link_to destroy_user_session_path, method: :delete do %>
+				<li>ログアウトする</li>
+			<% end %>
+		</ul>
+	</div><!-- /col-md-3 col-sm-2 -->
+	<div class="col-md-9 col-sm-4">
+		<h3>予約履歴</h3>
+		<table class="history-schedule-table">
+			<% @reserves.each do |reserve| %>
+			<tr class="history-schedule-tabletr">
+				<th class="history-schedule-title"><%= reserve.name %></th>
+				<th class="history-schedule-time"><%= reserve.live.date %></th>
+				<th class="history-schedule-performer"><%= reserve.live.performer %></th>
+			</tr>
+			<% end %>
+		</table>
+	</div><!-- /col-md-8 col-sm-4 -->
+</div><!-- /container -->
+
+<%= render 'user/footer' %>

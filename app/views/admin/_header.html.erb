@@ -1,0 +1,8 @@
+<header id="admin-header">
+	<div class="clearfix">
+		<div class="admin-heder-txt">ようこそ管理者様</div>
+		<%= link_to(destroy_admin_session_path(current_user)) do %>
+			<div class="admin-heder-logout">ログアウトする ></div>
+		<% end %>
+	</div><!-- /.clearfix -->
+</header><!-- /header -->

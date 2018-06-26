@@ -1,0 +1,37 @@
+<%= render 'admin/header' %>
+<%= render 'admin/sidemenu' %>
+
+	<div class="admin-contain">
+		<div class="admin-menu-title">ユーザー登録一覧</div>
+		<div class="admin-wrap">
+			<table class="admin-user-table">
+				<tr>
+					<th>ユーザー名</th>
+					<th>メールアドレス</th>
+					<th>電話番号</th>
+				</tr>
+				<% @users.each do |user| %>
+					<tr>
+						<td>
+							<%= link_to(admin_user_path(user)) do %>
+								<%= user.name %>(<%= user.name_phonetic %>)
+							<% end %>
+						</td>
+						<td>
+							<%= link_to(admin_user_path(user)) do %>
+								<%= user.email %>
+							<% end %>
+						</td>
+						<td>
+							<%= link_to(admin_user_path(user)) do %>
+								<%= user.phone_number %>
+							<% end %>
+						</td>
+					</tr>
+				<% end %>
+			</table>
+		</div>
+	</div>
+
+<%= render 'admin/footer' %>
+

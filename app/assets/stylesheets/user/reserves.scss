@@ -1,0 +1,116 @@
+// Place all the styles related to the user/reserves controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------------------------------------------------------------------
+	購入履歴ページ
+-----------------------------------------------------------------------*/
+/* 購入履歴テーブル */
+.r-schedule-table{
+	border-top: 3px solid #ea71a7;
+	border-bottom: 2px dashed #ea71a7;
+}
+.r-schedule-title{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px 180px 20px 0;
+}
+.r-schedule-time{
+	font-weight: normal;
+	padding: 0 200px 0 0;
+}
+.r-schedule-performer{
+	padding: 0 200px 0 0;
+	font-weight: normal;
+
+}
+.r-schedule-price{
+	padding: 20px 105px 20px 0;
+	color: #E0001A;
+
+}
+
+/*---------------------------------------------------------------------
+	予約完了画面
+-----------------------------------------------------------------------*/
+.ticket-title-txt{
+	font-size: 30px;
+	margin: 40px 0 40px 0;
+	text-align: center;
+}
+/* チケットデザイン */
+.ticket-design-box{
+	width: 400px;
+	background-color: #fff;
+	border: 2px solid #ea71a7;
+	padding: 20px;
+}
+.ticket-design-l{
+	float: left;
+	width: 300px;
+	border-right: 2px dashed #ea71a7;
+}
+.ticket-design-r{
+	float: right;
+}
+.ticket-design-title{
+	font-family: 'Anton', sans-serif;
+	color: #E0001A;
+	letter-spacing: 2px;
+	font-size: 40px;
+}
+.ticket-design-txt{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

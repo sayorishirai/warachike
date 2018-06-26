@@ -1,0 +1,143 @@
+// Place all the styles related to the user/performers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*---------------------------------------------------------------------
+	芸人一覧ページ
+-----------------------------------------------------------------------*/
+/* 人数構成メニュー */
+#group-header-menu{
+	background-color: #ea71a7;
+}
+#group-header-menu li{
+	color: #fff;
+	display: inline-block;
+	padding: 8px 40px 8px 40px;
+	font-size: 16px;
+}
+/* 芸風メニュー */
+#style-header-menu{
+	background-color: #fff100;
+	margin-bottom: 20px !important;
+}
+#style-header-menu li{
+	color: #1a428d;
+	display: inline-block;
+	padding: 8px 40px 8px 40px;
+	font-size: 16px;
+}
+/* ５０音順 */
+#japanese-header-menu{
+	border: 1px solid #1a428d;
+	margin-bottom: 30px !important;
+
+}
+#japanese-header-menu li{
+	font-size: 18px;
+	color: #1a428d;
+	display: inline-block;
+	border-left: 1px dashed #1a428d;
+	padding: 10px 25px;
+}
+#japanese-list{
+	font-size: 16px !important;
+	border-left:none !important;
+	padding: 0 78px !important;
+}
+/* 芸人の写真BOX */
+.performer-photo-box{
+	width: 200px;
+	height: 200px;
+	border:1px solid #ccc;
+}
+.performer-box-txt{
+	width: 200px;
+	text-align: center;
+	color: #1a428d;
+	font-size: 18px;
+	margin-top: 10px !important;
+}
+
+/*---------------------------------------------------------------------
+	芸人詳細ページ
+-----------------------------------------------------------------------*/
+/* 芸人画像 */
+.p-img{
+	width: 250px;
+	height: 300px;
+	border:1px solid #ccc;
+	margin-bottom: 30px;
+}
+/* ボタン */
+.favorite-btn{
+	width: 250px;
+	background-color:#ea71a7;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	padding: 12px 0;
+	margin-bottom: 10px;
+	text-align:center;
+}
+.support-btn{
+	width: 250px;
+	background-color:#fff100;
+	color: #1a428d;
+	font-size: 18px;
+	border: none;
+	padding: 12px 0;
+	margin-bottom: 10px;
+	text-align:center;
+}
+/* 芸人紹介 */
+.p-introduction{
+	margin-bottom: 50px !important;
+}
+.p-introduction-name{
+	color: #1a428d;
+	font-size: 18px !important;
+	margin-bottom: 20px;
+}
+.p-introduction li{
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+.p-introduction li span{
+	color: #E0001A;
+}
+/* 芸人動画 */
+.p-video-box{
+	background-color: #333333;
+	height: 270px;
+	padding: 10px;
+	margin-bottom: 80px;
+}
+.p-video{
+	width: 360px;
+	height: 250px;
+	background-color: #fff;
+	float: left;
+	margin: 0 0 0 10px;
+}
+/* 最新情報・経歴・感想 */
+.p-menu{
+	border-top: 3px solid #ea71a7;
+}
+.p-menu li{
+	font-size: 18px;
+	color: #1a428d;
+	padding: 10px 0;
+	text-align: center;
+}
+.p-info-menu{
+	margin: 0 0 50px 20px !important;
+}
+.p-info-menu li{
+	font-size: 16px;
+}
+.p-info-menu li span{
+	color: #E0001A;
+}
+
+

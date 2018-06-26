@@ -1,0 +1,24 @@
+<%= render 'admin/header' %>
+<%= render 'admin/sidemenu' %>
+
+	<div class="admin-contain">
+		<div class="admin-menu-title">予約詳細</div>
+		<div class="admin-wrap">
+			<%= form_for(@reserve) do |f| %>
+				<div class="admin-user-form-box">
+					<div class="admin-user-form-line">
+						<div class="admin-user-form-txt">公演名 :　</div>
+						<div class="admin-user-form-txt2"><%= f.text_field :name %></div>
+					</div>
+					<div class="admin-user-form-line">
+						<div class="admin-user-form-txt">料金 :　</div>
+						<div class="admin-user-form-txt2"><%= f.text_field :price %></div>
+					</div>
+				</div>
+				<%= f.submit '保存', :class=>"admin-s-btn" %>
+			<% end %>
+		</div>
+	</div>
+
+<%= render 'admin/footer' %>
+

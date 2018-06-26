@@ -1,0 +1,22 @@
+<%= render 'user/header' %>
+<%= render 'user/header-menu' %>
+
+<div class="container">
+	<h2 class="mb50">購入履歴</h2>
+		<table class="r-schedule-table">
+			<tr class="r-schedule-tabletr">
+				<% @lives.each do |live| %>
+				<th class="r-schedule-title"><%= lives.name %></th>
+				<th class="r-schedule-time"><%= lives.date %></th>
+				<th class="r-schedule-performer"><%= lives.performer %></th>
+				<th class="r-schedule-price"><%= lives.price %>円</th>
+			</tr>
+		</table>
+</div><!-- /container -->
+
+<%= render 'user/footer' %>
+
+
+
+
+

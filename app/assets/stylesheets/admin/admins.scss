@@ -1,0 +1,133 @@
+// Place all the styles related to the admin/admins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---------------------------------------------------------------------
+	部分テンプレート
+-----------------------------------------------------------------------*/
+/*-- header --*/
+#admin-header{
+	background-color: #1a428d;
+	height: 50px;
+	border-bottom: 2px solid #E07581;
+}
+.admin-heder-txt{
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	margin: 10px 0 0 50px;
+}
+.admin-heder-logout{
+	float: right;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	margin: 13px 50px 0 0;
+}
+/*-- sidemenu --*/
+#admin-sidemenu{
+	width: 250px;
+}
+#admin-sidemenu ul{
+	background-color: #ea71a7;
+}
+#admin-sidemenu ul li{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	padding: 10px 0 10px 15px;
+	border-bottom: 2px solid #fff;
+}
+#admin-sidemenu ul li span{
+	color: #fff100;
+	font-size: 14px;
+}
+/*-- footer --*/
+#admin-footer{
+	background-color: #1a428d;
+	height: 20px;
+	border-top: 2px solid #E07581;
+}
+
+/*---------------------------------------------------------------------
+	トップページ
+-----------------------------------------------------------------------*/
+/* トップ画面 */
+.admin-top-txt{
+	font-weight: bold;
+	font-size: 30px;
+}
+.admin-top-info{
+	text-align: center;
+	margin-top: 100px;
+}
+/* 共通ラッパー */
+.admin-contain{
+	margin-left: 250px;
+}
+.admin-wrap{
+	margin:0 70px;
+}
+.admin-menu-title{
+	font-size: 18px;
+	font-weight: bold;
+	color: #1a428d;
+	padding: 10px 0 10px 20px;
+	background-color: #fff100;
+	min-width: 1200px;
+	margin: 0 0 30px 0;
+}
+/* 共通見出し */
+.admin-hedding{
+	border-left:5px solid #ea71a7;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	margin: 0 0 20px 0;
+}
+
+/*---------------------------------------------------------------------
+	ログインページ
+-----------------------------------------------------------------------*/
+/* ログイン前ヘッダー */
+#admin-login-header{
+	background-color: #1a428d;
+	height: 30px;
+	border-bottom: 2px solid #E07581;
+	margin: 0 0 50px 0;
+}
+.admin-login-title{
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0 0 20px 0;
+}
+/* ログインボタン */
+#admin-actions input[type="submit"] {
+	width: 150px;
+	margin: 30px 0 0 100px;
+	background-color:#ea71a7;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

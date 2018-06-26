@@ -1,0 +1,22 @@
+<%= render 'user/header' %>
+<%= render 'user/header-menu' %>
+
+<div class="container">
+	<h4>チケット詳細確認</h4>
+		<%= form_for(@live, url: reserve_ticket_page_3_path(@live), html: {method: 'POST'}) do |live| %>
+			<table class="r-schedule-table">
+				<tr class="r-schedule-tabletr">
+					<th class="r-schedule-title"><%= live.name %></th>
+					<th class="r-schedule-time"><%= live.date %></th>
+					<th class="r-schedule-performer"><%= live.performer %></th>
+					<th class="r-schedule-price"><%= live.price %>円</th>
+				</tr>
+			</table>
+			<%= link_to(reserve_ticket_page_2_path(current_user)) do %>
+				<div class="form-back-btn">< 戻る</div>
+			<% end %>
+		    <%= f.submit "予約する" %>
+		<% end %>
+</div><!-- /container -->
+
+<%= render 'user/footer' %>
