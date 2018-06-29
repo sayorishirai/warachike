@@ -1,2 +1,0 @@
-class PerformerGenre < ApplicationRecord
-end

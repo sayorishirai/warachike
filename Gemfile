@@ -77,13 +77,9 @@ gem "refile-mini_magick"
 gem 'kaminari'
 #ログイン機能用gem
 gem 'devise'
-# 検索フォーム用gem
-gem 'ransack'
 # フォント、アイコン用gem
 gem "font-awesome-rails"
-# オートコンプリート機能用gem
-gem 'jquery-ui-rails'
-gem 'jquery-rails'
+
 
 
 

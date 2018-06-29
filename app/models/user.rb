@@ -5,6 +5,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   	has_many :reserves
-  	has_many :likes
-  	has_many :supports
 end

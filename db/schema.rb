@@ -76,7 +76,6 @@ ActiveRecord::Schema.define(version: 2018_06_15_110332) do
     t.integer "live_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "menbername"
   end
 
   create_table "regions", force: :cascade do |t|

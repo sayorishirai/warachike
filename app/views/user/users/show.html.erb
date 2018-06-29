@@ -1,4 +1,4 @@
-<%= render 'user/header' %>
+<%= render 'user/header-out' %>
 
 <div class="container">
 	<h2>マイページ</h2>
@@ -14,16 +14,18 @@
 		</ul>
 	</div><!-- /col-md-3 col-sm-2 -->
 	<div class="col-md-9 col-sm-4">
-		<h3>予約履歴</h3>
-		<table class="history-schedule-table">
-			<% @reserves.each do |reserve| %>
-			<tr class="history-schedule-tabletr">
-				<th class="history-schedule-title"><%= reserve.name %></th>
-				<th class="history-schedule-time"><%= reserve.live.date %></th>
-				<th class="history-schedule-performer"><%= reserve.live.performer %></th>
-			</tr>
-			<% end %>
-		</table>
+		<div class="history-schedule-box">
+			<h3>予約履歴</h3>
+			<table class="history-schedule-table">
+				<% @reserves.each do |reserve| %>
+				<tr class="history-schedule-tabletr">
+					<th class="history-schedule-title"><%= reserve.name %></th>
+					<th class="history-schedule-time"><%= reserve.live.date %></th>
+					<th class="history-schedule-performer"><%= reserve.live.performer %></th>
+				</tr>
+				<% end %>
+			</table>
+		</div>
 	</div><!-- /col-md-8 col-sm-4 -->
 </div><!-- /container -->
 

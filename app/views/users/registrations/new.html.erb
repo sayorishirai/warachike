@@ -40,7 +40,7 @@
 
         <div class="red-underline2">
           <div class="field">
-            <div class="device-txt"><%= f.label :パスワード： %></div>
+            <div><%= f.label :パスワード： %></div>
             <div class="device-txt"><%= f.password_field :password, autocomplete: "off" %></div>
             <% if @minimum_password_length %>
             <em>パスワードは<%= @minimum_password_length %>文字以上</em>
@@ -50,7 +50,7 @@
 
         <div class="red-underline2">
           <div class="field">
-            <div class="device-txt2"><%= f.label :もう一度パスワードを入力してください %></div>
+            <div><%= f.label :もう一度パスワードを入力してください %></div>
             <%= f.password_field :password_confirmation, autocomplete: "off" %>
           </div>
         </div><!-- .red-underline2 -->
